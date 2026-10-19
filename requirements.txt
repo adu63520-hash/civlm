@@ -1,0 +1,4 @@
+numpy
+tokenizers
+matplotlib
+# torch: pip install torch --index-url https://download.pytorch.org/whl/cu121

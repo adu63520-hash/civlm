@@ -1,0 +1,74 @@
+{
+ "train_tokens": 104660030,
+ "val_tokens": 1765700,
+ "n_worlds": 30000,
+ "years": 40,
+ "narrative_frac": 0.5,
+ "cf_frac": 0.1,
+ "vocab_size": 921,
+ "train_combos": [
+  {
+   "irrigation": "boost",
+   "climate": "wet",
+   "trade": "rich"
+  },
+  {
+   "irrigation": "boost",
+   "climate": "dry",
+   "trade": "rich"
+  },
+  {
+   "irrigation": "boost",
+   "climate": "dry",
+   "trade": "poor"
+  },
+  {
+   "irrigation": "salinize",
+   "climate": "wet",
+   "trade": "rich"
+  },
+  {
+   "irrigation": "salinize",
+   "climate": "wet",
+   "trade": "poor"
+  },
+  {
+   "irrigation": "salinize",
+   "climate": "dry",
+   "trade": "poor"
+  },
+  {
+   "irrigation": "weak",
+   "climate": "wet",
+   "trade": "rich"
+  },
+  {
+   "irrigation": "weak",
+   "climate": "wet",
+   "trade": "poor"
+  },
+  {
+   "irrigation": "weak",
+   "climate": "dry",
+   "trade": "rich"
+  },
+  {
+   "irrigation": "weak",
+   "climate": "dry",
+   "trade": "poor"
+  }
+ ],
+ "heldout_combos": [
+  {
+   "irrigation": "salinize",
+   "climate": "dry",
+   "trade": "rich"
+  },
+  {
+   "irrigation": "boost",
+   "climate": "wet",
+   "trade": "poor"
+  }
+ ],
+ "tokens_per_doc": 3488.6676666666667
+}

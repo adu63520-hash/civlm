@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+data/*.bin
+data/raw/
+out/
+*.pt
+*.zip
+results/*_samples.jsonl
+results_*/
+shots/

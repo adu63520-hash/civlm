@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CivLM 文明推演</title>
+<style>
+:root{
+  --paper:#f4efe4; --paper2:#ebe3d2; --card:#fbf8f1; --ink:#2a241c; --ink2:#6b6152; --line:#d8cdb6;
+  --lm:#b4542f; --obs:#2f6f8f; --truth:#2a241c; --good:#3f7d3a; --bad:#b03a2e; --warn:#b8862b;
+  --serif: "Songti SC","Noto Serif SC","Source Han Serif SC",Georgia,serif;
+  --sans: system-ui,-apple-system,"Microsoft YaHei","PingFang SC",sans-serif;
+  --mono: ui-monospace,Consolas,"Cascadia Mono",monospace;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:14px;line-height:1.5}
+header{display:flex;align-items:center;gap:18px;flex-wrap:wrap;padding:12px 20px;border-bottom:1px solid var(--line);background:var(--paper2)}
+header h1{font-family:var(--serif);font-size:22px;margin:0;letter-spacing:.06em}
+header h1 small{font-family:var(--sans);font-size:12px;color:var(--ink2);letter-spacing:0;margin-left:8px;font-weight:normal}
+.ctrl{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-left:auto}
+.ctrl label{font-size:12px;color:var(--ink2)}
+select,input,button{font:inherit;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:6px;padding:5px 9px}
+input[type=number]{width:100px}
+button{cursor:pointer}
+button.primary{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+button:disabled{opacity:.45;cursor:wait}
+main{display:grid;grid-template-columns:280px minmax(0,1fr) 340px;gap:16px;padding:16px 20px;align-items:start}
+@media (max-width:1100px){main{grid-template-columns:1fr}}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px}
+.panel h2{font-family:var(--serif);font-size:15px;margin:0 0 10px;letter-spacing:.05em}
+.panel + .panel{margin-top:14px}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:6px 12px}
+.stat{display:flex;justify-content:space-between;border-bottom:1px dotted var(--line);padding:2px 0}
+.stat b{font-variant-numeric:tabular-nums}
+.year-big{font-family:var(--serif);font-size:30px;line-height:1}
+.year-big span{font-size:13px;color:var(--ink2);font-family:var(--sans);margin-left:6px}
+.acts{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.acts button{text-align:left;padding:7px 9px;line-height:1.25}
+.acts button small{display:block;color:var(--ink2);font-size:11px}
+.acts button:hover:not(:disabled){border-color:var(--ink)}
+.chron{min-height:60vh}
+.intro{color:var(--ink2);font-size:13px}
+.intro p{margin:.4em 0}
+.header-line{font-family:var(--serif);font-style:italic;color:var(--ink2);margin-bottom:10px}
+.turn{border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin-bottom:12px;background:#fffdf8}
+.turn.branch{border-left:4px solid var(--warn)}
+.turn-head{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.turn-head h3{margin:0;font-family:var(--serif);font-size:16px}
+.tag{font-size:11px;padding:1px 7px;border-radius:99px;background:var(--paper2);color:var(--ink2);margin-left:6px}
+.tag.drought{background:#f1dcc4;color:#8a4b14}.tag.bountiful{background:#dcebd2;color:#2f6a26}.tag.fail{background:#f2d4cf;color:var(--bad)}
+.forecast{display:flex;align-items:center;gap:8px;margin:8px 0 4px;font-size:12px;color:var(--ink2)}
+.fbar{flex:1;display:flex;height:14px;border-radius:4px;overflow:hidden;border:1px solid var(--line)}
+.fbar div{height:100%}
+.cmp{width:100%;border-collapse:collapse;margin-top:8px;font-variant-numeric:tabular-nums}
+.cmp th,.cmp td{padding:3px 6px;text-align:right;border-bottom:1px solid #eee5d3}
+.cmp th:first-child,.cmp td:first-child{text-align:left;color:var(--ink2);font-weight:normal}
+.cmp th{font-size:12px;font-weight:600}
+.cmp .lm{color:var(--lm)}.cmp .obs{color:var(--obs)}
+.err{font-size:11px;margin-left:4px}
+.err.g{color:var(--good)}.err.m{color:var(--warn)}.err.b{color:var(--bad)}
+details{margin-top:8px}
+summary{cursor:pointer;font-size:12px;color:var(--ink2)}
+.raw{font-family:var(--mono);font-size:12px;white-space:pre-wrap;background:var(--paper);border-radius:6px;padding:8px;margin:6px 0 0}
+.raw .lab{font-family:var(--sans);font-size:11px;color:var(--ink2);display:block;margin-bottom:2px}
+.prose{font-family:var(--serif);font-size:14px;margin:6px 0 0;color:#3d352a}
+.rewind{font-size:12px;padding:2px 8px}
+.score{display:grid;grid-template-columns:1fr 1fr;gap:8px;text-align:center}
+.score div{background:var(--paper);border-radius:8px;padding:8px}
+.score .n{font-size:22px;font-family:var(--serif)}
+.score .l{font-size:11px;color:var(--ink2)}
+svg text{font-family:var(--sans);font-size:10px;fill:var(--ink2)}
+.legend{display:flex;gap:12px;font-size:11px;color:var(--ink2);margin-top:4px;flex-wrap:wrap}
+.legend i{display:inline-block;width:14px;height:3px;vertical-align:middle;margin-right:4px}
+.guess{display:grid;grid-template-columns:auto 1fr;gap:6px 8px;align-items:center}
+.reveal{margin-top:10px;font-size:13px}
+.ok{color:var(--good)}.no{color:var(--bad)}
+.dream p{font-family:var(--serif);margin:6px 0;padding:8px 10px;background:#f6efe0;border-left:3px solid var(--lm);border-radius:4px;white-space:pre-wrap}
+.dream .mono{font-family:var(--mono);font-size:12px}
+.post{font-size:12px}
+.post .row{display:flex;align-items:center;gap:6px;margin:3px 0}
+.post .row span:first-child{width:62px}
+.post .bar{flex:1;height:8px;background:var(--paper2);border-radius:4px;overflow:hidden}
+.post .bar div{height:100%;background:var(--obs)}
+.busy{position:fixed;bottom:16px;left:50%;transform:translateX(-50%);background:var(--ink);color:var(--paper);padding:6px 14px;border-radius:99px;font-size:13px;display:none}
+.muted{color:var(--ink2);font-size:12px}
+</style>
+</head>
+<body>
+<header>
+  <h1>CivLM 文明推演<small>一个从零训练的 2600 万参数模型，只读过虚构文明的历史</small></h1>
+  <div class="ctrl">
+    <label>世界</label>
+    <select id="rules">
+      <option value="random">随机（可能是训练见过的组合）</option>
+      <option value="heldout" selected>训练中从未出现的组合</option>
+      <option value="pick">自己指定…</option>
+    </select>
+    <span id="pick" style="display:none">
+      <select id="r_irr"></select><select id="r_cli"></select><select id="r_tra"></select>
+    </span>
+    <label>文体</label>
+    <select id="style"><option value="structured">结构化</option><option value="narrative">叙事</option></select>
+    <label>种子</label><input type="number" id="seed" placeholder="随机">
+    <button class="primary" id="newbtn">开启新世界</button>
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="panel">
+      <div class="year-big" id="yearbig">—</div>
+      <div class="stats" id="stats" style="margin-top:10px"></div>
+    </div>
+    <div class="panel">
+      <h2>这一年做什么？</h2>
+      <div class="acts" id="acts"></div>
+      <p class="muted" style="margin:8px 0 0">选定后：模型先猜天气，再预测结果，最后模拟器揭晓真实发生的事。</p>
+    </div>
+    <div class="panel">
+      <h2>让模型做梦</h2>
+      <p class="muted" style="margin:0 0 8px">不给它任何真实信息，让它从当前历史出发，自己写下接下来几年（行动、天气、结果都由它编）。</p>
+      <div style="display:flex;gap:6px;align-items:center">
+        <select id="dreamn"><option>3</option><option selected>5</option><option>8</option></select><span class="muted">年</span>
+        <select id="dreamt"><option value="0">最可能</option><option value="0.8" selected>有想象力</option><option value="1.1">天马行空</option></select>
+        <button id="dreambtn">做梦</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel chron">
+    <h2>文明编年史</h2>
+    <div id="headerline" class="header-line"></div>
+    <div id="chron">
+      <div class="intro">
+        <p>每个世界有三条你和模型都看不见的<b>隐藏规律</b>：</p>
+        <p>· <b>灌溉</b>：水渠大幅增产 / 先增产后盐碱化减产 / 几乎没用<br>
+           · <b>气候</b>：湿润（很少干旱）/ 干燥（经常干旱）<br>
+           · <b>贸易</b>：30 木材能换很多粮食 / 只能换一点</p>
+        <p>模型从没被告知这些规律，它只读过 3 万个虚构文明的历史。看它能否通过这个文明的过去，猜出这个世界的脾气。</p>
+        <p>建议：选「训练中从未出现的组合」，然后多修几条水渠、做几次贸易，看模型预测是否越来越准。</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="panel">
+      <h2>谁预测得更准？</h2>
+      <div class="score">
+        <div><div class="n" id="s_lm" style="color:var(--lm)">—</div><div class="l">模型 · 收成平均误差</div></div>
+        <div><div class="n" id="s_obs" style="color:var(--obs)">—</div><div class="l">理想观察者 · 收成平均误差</div></div>
+        <div><div class="n" id="s_lmdir" style="color:var(--lm)">—</div><div class="l">模型 · 粮食涨跌猜对</div></div>
+        <div><div class="n" id="s_obsdir" style="color:var(--obs)">—</div><div class="l">观察者 · 粮食涨跌猜对</div></div>
+      </div>
+      <p class="muted" style="margin:8px 0 0">理想观察者知道所有可能的规律，只是不知道这个世界是哪一种，它是模型能达到的上限。产量每年有约 10% 的随机波动，所以误差降不到 0。</p>
+    </div>
+    <div class="panel">
+      <h2>收成：真实 vs 预测</h2>
+      <svg id="ch_h" viewBox="0 0 310 150" width="100%"></svg>
+      <div class="legend"><span><i style="background:var(--truth)"></i>真实</span><span><i style="background:var(--lm)"></i>模型</span><span><i style="background:var(--obs)"></i>观察者</span></div>
+    </div>
+    <div class="panel">
+      <h2>干旱预报</h2>
+      <svg id="ch_d" viewBox="0 0 310 110" width="100%"></svg>
+      <div class="legend"><span><i style="background:var(--lm)"></i>模型给出的 P(干旱)</span><span><i style="background:var(--obs)"></i>观察者</span><span>▲ 真的干旱了</span></div>
+    </div>
+    <div class="panel">
+      <h2>你来当侦探</h2>
+      <div class="guess">
+        <span>灌溉</span><select id="g_irr"><option value="">?</option><option value="boost">大幅增产</option><option value="salinize">先增后减（盐碱化）</option><option value="weak">几乎没用</option></select>
+        <span>气候</span><select id="g_cli"><option value="">?</option><option value="wet">湿润</option><option value="dry">干燥</option></select>
+        <span>贸易</span><select id="g_tra"><option value="">?</option><option value="rich">换得多</option><option value="poor">换得少</option></select>
+      </div>
+      <div style="display:flex;gap:6px;margin-top:10px">
+        <button id="revealbtn">揭晓答案</button>
+        <button id="peekbtn">偷看观察者的推断</button>
+      </div>
+      <div id="peek" class="post" style="display:none;margin-top:8px"></div>
+      <div id="reveal" class="reveal"></div>
+    </div>
+  </section>
+</main>
+<div class="busy" id="busy">模型思考中…</div>
+
+<script>
+const ACT = {
+  farm:["开垦农田","花 25 木材，+1 农田"], canal:["修水渠","花 35 木材，+1 水渠（最多 3）"],
+  forest:["伐木","获得约 45 木材"], trade:["贸易","用 30 木材换粮食"],
+  research:["研究","积累知识，提高产量"], feast:["节庆","消耗粮食，提升情绪"],
+  house:["建房","花 30 木材，+50 容量"], rest:["休养","情绪略升"]
+};
+const WX = {normal:"平常年景", drought:"干旱", bountiful:"风调雨顺"};
+const RULE_CN = {boost:"水渠大幅增产", salinize:"先增后减（盐碱化）", weak:"水渠几乎没用", wet:"湿润", dry:"干燥", rich:"换得多", poor:"换得少"};
+const DIR_CN = {up:"↑涨", down:"↓跌", same:"→平"};
+let sid=null, S=null, turns=[], busy=false, meta=null;
+
+const $ = id => document.getElementById(id);
+async function api(path, body){
+  const r = await fetch(path,{method:body?"POST":"GET",headers:{"Content-Type":"application/json"},body:body?JSON.stringify(body):undefined});
+  const j = await r.json(); if(j.error) throw new Error(j.error); return j;
+}
+function setBusy(b,msg){busy=b;$("busy").style.display=b?"block":"none";if(msg)$("busy").textContent=msg;
+  document.querySelectorAll("button").forEach(x=>x.disabled=b);}
+function esc(s){return String(s??"").replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]))}
+
+async function init(){
+  meta = await api("/api/meta");
+  for (const [k,id] of [["irrigation","r_irr"],["climate","r_cli"],["trade","r_tra"]])
+    $(id).innerHTML = meta.rules[k].map(v=>`<option value="${v}">${RULE_CN[v]}</option>`).join("");
+  $("rules").onchange = ()=>$("pick").style.display = $("rules").value==="pick"?"inline":"none";
+  $("acts").innerHTML = Object.entries(ACT).map(([k,[n,d]])=>`<button data-a="${k}">${n}<small>${d}</small></button>`).join("");
+  $("acts").onclick = e=>{const b=e.target.closest("button"); if(b&&sid&&!busy) turn(b.dataset.a);};
+  $("newbtn").onclick = newWorld; $("dreambtn").onclick = doDream;
+  $("revealbtn").onclick = reveal; $("peekbtn").onclick = ()=>{const p=$("peek");p.style.display=p.style.display==="none"?"block":"none";renderPeek();};
+  newWorld();
+}
+
+async function newWorld(){
+  let rules = $("rules").value;
+  if (rules==="pick") rules = {irrigation:$("r_irr").value, climate:$("r_cli").value, trade:$("r_tra").value};
+  setBusy(true,"创造世界…");
+  try{
+    S = await api("/api/new",{seed:$("seed").value||null, rules, style:$("style").value});
+    sid=S.sid; turns=[]; $("seed").placeholder = "当前 "+S.seed;
+    $("headerline").textContent = S.header.trim();
+    $("reveal").innerHTML=""; ["g_irr","g_cli","g_tra"].forEach(i=>$(i).value="");
+    renderState(S.state); renderChron(); renderSide();
+    $("chron").insertAdjacentHTML("afterbegin", $("chron").innerHTML ? "" : "");
+  } finally { setBusy(false); }
+}
+
+async function turn(act){
+  setBusy(true,"模型正在推演这一年…");
+  try{
+    const r = await api("/api/turn",{sid, act});
+    turns.push(r.turn); renderState(r.state); renderChron(); renderSide();
+    window.scrollTo({top:document.body.scrollHeight,behavior:"smooth"});
+  } catch(e){ alert(e.message); } finally { setBusy(false); }
+}
+
+async function rewind(year){
+  setBusy(true,"回到过去…");
+  try{
+    const r = await api("/api/rewind",{sid, year});
+    turns = r.turns; renderState(r.state); renderChron(year); renderSide();
+  } finally { setBusy(false); }
+}
+
+async function doDream(){
+  if(!sid) return;
+  setBusy(true,"模型在做梦…");
+  try{
+    const r = await api("/api/dream",{sid, n:+$("dreamn").value, temperature:+$("dreamt").value});
+    const mono = S.style==="structured";
+    const html = `<div class="turn dream"><div class="turn-head"><h3>模型的梦（第 ${S.state.year}–${S.state.year+r.years.length-1} 年）</h3>
+      <span class="muted">没有发生，只是它的想象</span></div>
+      ${r.years.map(t=>`<p class="${mono?"mono":""}">${esc(t)}</p>`).join("")}
+      <p class="muted" style="background:none;border:none;padding:0">看看它编的数字是否自洽：人口和粮食的变化合理吗？修了水渠后产量有没有变化？</p></div>`;
+    $("chron").insertAdjacentHTML("beforeend", html);
+    window.scrollTo({top:document.body.scrollHeight,behavior:"smooth"});
+  } finally { setBusy(false); }
+}
+
+async function reveal(){
+  const r = await api("/api/reveal",{sid});
+  const g = {irrigation:$("g_irr").value, climate:$("g_cli").value, trade:$("g_tra").value};
+  const rows = Object.entries(r.rules).map(([k,v])=>{
+    const name={irrigation:"灌溉",climate:"气候",trade:"贸易"}[k];
+    const hit = g[k] ? (g[k]===v ? `<span class="ok">✓ 你猜对了</span>` : `<span class="no">✗ 你猜的是「${RULE_CN[g[k]]}」</span>`) : "";
+    return `<div>${name}：<b>${RULE_CN[v]}</b> ${hit}</div>`;}).join("");
+  $("reveal").innerHTML = rows + `<div class="muted" style="margin-top:6px">单块农田基础产量 ${r.y0}，贸易汇率 ${r.trade_rate}（每 1 木材换粮）<br>
+    这个规则组合在训练中${r.seen_in_training?"<b>出现过</b>":"<b>从未出现</b>（模型第一次见）"}。</div>`;
+}
+
+function renderState(s){
+  S.state = s;
+  $("yearbig").innerHTML = `第 ${s.year} 年<span>${turns.length? "已推演 "+turns.length+" 年":"刚刚建立"}</span>`;
+  const items=[["人口",s.pop],["容量",s.cap],["粮食",s.food],["木材",s.wood],["农田",s.farms],["水渠",s.canals],["知识",s.tech],["情绪",s.mood]];
+  $("stats").innerHTML = items.map(([k,v])=>`<div class="stat"><span>${k}</span><b>${v}</b></div>`).join("");
+}
+
+function errClass(p,t){ if(p==null) return ["b","无法解析"]; const e=Math.abs(Math.log(Math.max(1,p)/Math.max(1,t)));
+  const pct=Math.round((Math.exp(e)-1)*100); return [e<0.1?"g":e<0.25?"m":"b", (p>=t?"+":"−")+pct+"%"]; }
+
+function cell(p,t,cls){ if(p==null) return `<td class="${cls}">?</td>`; const [c,txt]=errClass(p,t);
+  return `<td class="${cls}">${p}<span class="err ${c}">${txt}</span></td>`; }
+function dcell(p,t,cls){ return `<td class="${cls}">${p?DIR_CN[p]:"?"}${p?(p===t?' <span class="err g">✓</span>':' <span class="err b">✗</span>'):""}</td>`; }
+
+function renderChron(branchYear){
+  if(!turns.length){ if(branchYear===undefined) return; }
+  const html = turns.map((t,i)=>{
+    const pw=t.lm.p_weather, T=t.truth, L=t.lm, O=t.obs;
+    const branch = S.branch_from && t.year>=S.branch_from;
+    const prose = S.style==="narrative"
+      ? `<p class="prose">${esc(t.text.state)} ${esc(t.text.act)} ${esc(t.text.weather)} ${esc(t.text.outcome)}</p>`
+      : "";
+    return `<div class="turn ${branch?"branch":""}">
+      <div class="turn-head"><h3>第 ${t.year} 年 · ${ACT[t.act][0]}${t.ok?"":'<span class="tag fail">没能执行</span>'}<span class="tag ${t.weather}">${WX[t.weather]}</span></h3>
+        <button class="rewind" onclick="rewind(${t.year})" title="回到这一年年初，换一个选择">↺ 改写这一年</button></div>
+      <div class="forecast"><span>模型的天气预报</span>
+        <div class="fbar"><div style="width:${pw.normal*100}%;background:#d9cfbb" title="平常 ${(pw.normal*100).toFixed(0)}%"></div><div style="width:${pw.drought*100}%;background:#d49a5e" title="干旱 ${(pw.drought*100).toFixed(0)}%"></div><div style="width:${pw.bountiful*100}%;background:#8fb87e" title="丰年 ${(pw.bountiful*100).toFixed(0)}%"></div></div>
+        <span>干旱 ${(pw.drought*100).toFixed(0)}%（观察者 ${(O.p_drought*100).toFixed(0)}%）</span></div>
+      <table class="cmp"><tr><th></th><th class="lm">模型</th><th class="obs">观察者</th><th>真实</th></tr>
+        <tr><td>收成</td>${cell(L.harvest,T.harvest,"lm")}${cell(O.harvest,T.harvest,"obs")}<td><b>${T.harvest}</b></td></tr>
+        <tr><td>粮食</td>${dcell(L.food_dir,T.food_dir,"lm")}${dcell(O.food_dir,T.food_dir,"obs")}<td><b>${DIR_CN[T.food_dir]} ${T.food}</b></td></tr>
+        <tr><td>人口</td><td class="lm">${L.pop??"?"}</td><td class="obs">—</td><td><b>${T.pop}</b></td></tr>
+        ${T.trade_in?`<tr><td>贸易所得</td><td class="lm">${L.trade_in??"?"}</td><td class="obs">—</td><td><b>${T.trade_in}</b></td></tr>`:""}
+      </table>
+      ${prose}
+      <details><summary>模型原话 vs 真实记录${L.truncated?"（历史太长，最早的部分已截断）":""}</summary>
+        <div class="raw"><span class="lab">模型写的</span>${esc(L.text)}</div>
+        <div class="raw"><span class="lab">真实发生的</span>${esc(t.text.outcome)}</div></details>
+    </div>`;}).join("");
+  const note = S.branch_from ? `<p class="muted">↺ 从第 ${S.branch_from} 年起是改写后的新历史（左侧橙色边）。天气和随机波动与原历史完全相同，只有你的选择不同。</p>` : "";
+  $("chron").innerHTML = turns.length ? note+html : `<div class="intro"><p>新世界已就绪。在左边选择第一年的行动。</p></div>`;
+}
+
+function renderSide(){
+  const lmE=[],obE=[],lmD=[],obD=[];
+  for(const t of turns){
+    lmE.push(t.lm.harvest==null?1:Math.min(1,Math.abs(Math.log(Math.max(1,t.lm.harvest)/Math.max(1,t.truth.harvest)))));
+    obE.push(Math.abs(Math.log(Math.max(1,t.obs.harvest)/Math.max(1,t.truth.harvest))));
+    lmD.push(t.lm.food_dir===t.truth.food_dir); obD.push(t.obs.food_dir===t.truth.food_dir);
+  }
+  const avg=a=>a.length?a.reduce((x,y)=>x+y,0)/a.length:null, pct=v=>v==null?"—":Math.round((Math.exp(v)-1)*100)+"%";
+  $("s_lm").textContent=pct(avg(lmE)); $("s_obs").textContent=pct(avg(obE));
+  $("s_lmdir").textContent=lmD.length?Math.round(avg(lmD.map(Number))*100)+"%":"—";
+  $("s_obsdir").textContent=obD.length?Math.round(avg(obD.map(Number))*100)+"%":"—";
+  drawHarvest(); drawDrought(); renderPeek();
+}
+
+function axes(svg,W,H,pad,ymax,n){
+  let s="";
+  for(let i=0;i<=4;i++){const y=pad.t+(H-pad.t-pad.b)*i/4; s+=`<line x1="${pad.l}" x2="${W-pad.r}" y1="${y}" y2="${y}" stroke="#e6dcc8"/>`;
+    s+=`<text x="${pad.l-4}" y="${y+3}" text-anchor="end">${Math.round(ymax*(1-i/4)*100)/100}</text>`;}
+  return s;
+}
+function line(pts,color,dash){ if(pts.length<1) return ""; return `<polyline fill="none" stroke="${color}" stroke-width="2" ${dash?'stroke-dasharray="4 3"':""} points="${pts.map(p=>p.join(",")).join(" ")}"/>`+pts.map(p=>`<circle cx="${p[0]}" cy="${p[1]}" r="2.2" fill="${color}"/>`).join(""); }
+
+function drawHarvest(){
+  const W=310,H=150,pad={l:34,r:8,t:8,b:18}, svg=$("ch_h");
+  if(!turns.length){svg.innerHTML=`<text x="155" y="75" text-anchor="middle">推演几年后这里会出现曲线</text>`;return;}
+  const vals=turns.flatMap(t=>[t.truth.harvest,t.lm.harvest??0,t.obs.harvest]); const ymax=Math.max(...vals)*1.1||1;
+  const n=turns.length, x=i=>pad.l+(W-pad.l-pad.r)*(n===1?0.5:i/(n-1)), y=v=>pad.t+(H-pad.t-pad.b)*(1-v/ymax);
+  let s=axes(svg,W,H,pad,Math.round(ymax),n);
+  s+=line(turns.map((t,i)=>[x(i),y(t.truth.harvest)]),"var(--truth)");
+  s+=line(turns.filter(t=>t.lm.harvest!=null).map(t=>[x(turns.indexOf(t)),y(t.lm.harvest)]),"var(--lm)");
+  s+=line(turns.map((t,i)=>[x(i),y(t.obs.harvest)]),"var(--obs)",true);
+  const step=Math.max(1,Math.ceil(n/8)); turns.forEach((t,i)=>{ if(i%step===0) s+=`<text x="${x(i)}" y="${H-4}" text-anchor="middle">${t.year}</text>`; });
+  svg.innerHTML=s;
+}
+function drawDrought(){
+  const W=310,H=110,pad={l:34,r:8,t:10,b:18}, svg=$("ch_d");
+  if(!turns.length){svg.innerHTML="";return;}
+  const n=turns.length, x=i=>pad.l+(W-pad.l-pad.r)*(n===1?0.5:i/(n-1)), y=v=>pad.t+(H-pad.t-pad.b)*(1-v);
+  let s=axes(svg,W,H,pad,1,n);
+  s+=line(turns.map((t,i)=>[x(i),y(t.lm.p_weather.drought)]),"var(--lm)");
+  s+=line(turns.map((t,i)=>[x(i),y(t.obs.p_drought)]),"var(--obs)",true);
+  turns.forEach((t,i)=>{ if(t.weather==="drought") s+=`<text x="${x(i)}" y="${pad.t+2}" text-anchor="middle" style="fill:#b8862b;font-size:11px">▲</text>`; });
+  svg.innerHTML=s;
+}
+function renderPeek(){
+  const p=$("peek"); if(p.style.display==="none") return;
+  if(!turns.length){p.innerHTML='<span class="muted">还没有历史可供推断。</span>';return;}
+  const t=turns[turns.length-1], pi=t.obs.p_irrigation;
+  p.innerHTML=`<div class="muted">观察者对“灌溉规律”的判断（基于最近的历史）：</div>`+
+    Object.entries(pi).map(([k,v])=>`<div class="row"><span>${RULE_CN[k].slice(0,6)}</span><div class="bar"><div style="width:${v*100}%"></div></div><span>${Math.round(v*100)}%</span></div>`).join("")+
+    `<div class="muted">它认为干旱概率是 ${(t.obs.p_drought*100).toFixed(0)}%（湿润世界 5%，干燥世界 35%）。</div>
+     <div class="muted">注意：没修水渠之前，灌溉规律根本无从判断；盐碱化要修渠后几年才显现。</div>`;
+}
+init();
+</script>
+</body>
+</html>

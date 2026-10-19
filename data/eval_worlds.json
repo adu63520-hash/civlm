@@ -1,0 +1,3207 @@
+{
+ "id": [
+  {
+   "seed": 20000000,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "dry",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000001,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "dry",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000002,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000003,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000004,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000005,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000006,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000007,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000008,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000009,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000010,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000011,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000012,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000013,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000014,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000015,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "dry",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000016,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000017,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000018,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000019,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000020,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "dry",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000021,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000022,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000023,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000024,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000025,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000026,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000027,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000028,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000029,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000030,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000031,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000032,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000033,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000034,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000035,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000036,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000037,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000038,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000039,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000040,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000041,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000042,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000043,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000044,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000045,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000046,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000047,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "dry",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000048,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000049,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000050,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000051,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000052,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000053,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000054,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000055,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000056,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000057,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "dry",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000058,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000059,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000060,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000061,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "dry",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000062,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000063,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000064,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000065,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000066,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000067,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "dry",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000068,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000069,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000070,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000071,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000072,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000073,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000074,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000075,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "dry",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000076,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000077,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000078,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000079,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000080,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000081,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000082,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000083,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000084,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "dry",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000085,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "dry",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000086,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "dry",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000087,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000088,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "dry",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000089,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "dry",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000090,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000091,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000092,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000093,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000094,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000095,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000096,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000097,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000098,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000099,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000100,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "dry",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000101,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000102,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000103,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000104,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000105,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "dry",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000106,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000107,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000108,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000109,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "dry",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000110,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000111,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000112,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000113,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000114,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000115,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000116,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000117,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "dry",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000118,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000119,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000120,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000121,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000122,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000123,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000124,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000125,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000126,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000127,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000128,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000129,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "dry",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000130,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "dry",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000131,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000132,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000133,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "dry",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000134,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000135,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000136,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "dry",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000137,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000138,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "dry",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000139,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "dry",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000140,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000141,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000142,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000143,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000144,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000145,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000146,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000147,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000148,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000149,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000150,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000151,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000152,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000153,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "dry",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000154,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "dry",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000155,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000156,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000157,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000158,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "dry",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000159,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "dry",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000160,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000161,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000162,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "dry",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000163,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000164,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000165,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000166,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000167,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000168,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000169,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000170,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000171,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000172,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000173,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000174,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000175,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000176,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000177,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000178,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000179,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000180,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000181,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "dry",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000182,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000183,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000184,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000185,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000186,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000187,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "dry",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000188,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000189,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "dry",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000190,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000191,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000192,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000193,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000194,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000195,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000196,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20000197,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000198,
+   "rules": {
+    "irrigation": "weak",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20000199,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "rich"
+   }
+  }
+ ],
+ "ood": [
+  {
+   "seed": 20100000,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100001,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100002,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100003,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100004,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100005,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100006,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100007,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100008,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100009,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100010,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100011,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100012,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100013,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100014,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100015,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100016,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100017,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100018,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100019,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100020,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100021,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100022,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100023,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100024,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100025,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100026,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100027,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100028,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100029,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100030,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100031,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100032,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100033,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100034,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100035,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100036,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100037,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100038,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100039,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100040,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100041,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100042,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100043,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100044,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100045,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100046,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100047,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100048,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100049,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100050,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100051,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100052,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100053,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100054,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100055,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100056,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100057,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100058,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100059,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100060,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100061,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100062,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100063,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100064,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100065,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100066,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100067,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100068,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100069,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100070,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100071,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100072,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100073,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100074,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100075,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100076,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100077,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100078,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100079,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100080,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100081,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100082,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100083,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100084,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100085,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100086,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100087,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100088,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100089,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100090,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100091,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100092,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100093,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100094,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100095,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100096,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100097,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100098,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100099,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100100,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100101,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100102,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100103,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100104,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100105,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100106,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100107,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100108,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100109,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100110,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100111,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100112,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100113,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100114,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100115,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100116,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100117,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100118,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100119,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100120,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100121,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100122,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100123,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100124,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100125,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100126,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100127,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100128,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100129,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100130,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100131,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100132,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100133,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100134,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100135,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100136,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100137,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100138,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100139,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100140,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100141,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100142,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100143,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100144,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100145,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100146,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100147,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100148,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100149,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100150,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100151,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100152,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100153,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100154,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100155,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100156,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100157,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100158,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100159,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100160,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100161,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100162,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100163,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100164,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100165,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100166,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100167,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100168,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100169,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100170,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100171,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100172,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100173,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100174,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100175,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100176,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100177,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100178,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100179,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100180,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100181,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100182,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100183,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100184,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100185,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100186,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100187,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100188,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100189,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100190,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100191,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100192,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100193,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100194,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100195,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100196,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100197,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  },
+  {
+   "seed": 20100198,
+   "rules": {
+    "irrigation": "salinize",
+    "climate": "dry",
+    "trade": "rich"
+   }
+  },
+  {
+   "seed": 20100199,
+   "rules": {
+    "irrigation": "boost",
+    "climate": "wet",
+    "trade": "poor"
+   }
+  }
+ ],
+ "years": 40
+}
